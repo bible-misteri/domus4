@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esau yang Tersingkir | DOMUS ISAACI</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:#0b0b0b;
+    color:#e8e8e8;
+    font-family:Georgia,serif;
+    line-height:1.9;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(to bottom,#000,#161616);
+}
+
+.hero h1{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#bdbdbd;
+    font-style:italic;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 25px;
+}
+
+.quote{
+    color:#d4af37;
+    font-size:24px;
+    text-align:center;
+    font-style:italic;
+    margin:50px 0;
+}
+
+.choice{
+    text-align:center;
+    margin:40px 0;
+}
+
+.choice button{
+    background:#d4af37;
+    color:#111;
+    border:none;
+    padding:15px 25px;
+    margin:10px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.choice button:hover{
+    opacity:0.9;
+}
+
+.story{
+    display:none;
+    background:#151515;
+    padding:30px;
+    border-left:4px solid #d4af37;
+    margin-top:30px;
+}
+
+.story h2{
+    color:#d4af37;
+}
+
+.question-box{
+    margin-top:60px;
+    background:#151515;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.question-box h3{
+    color:#d4af37;
+}
+
+.option{
+    display:block;
+    margin:12px auto;
+    max-width:300px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#222;
+    color:white;
+}
+
+.option:hover{
+    background:#333;
+}
+
+.answer{
+    display:none;
+    margin-top:25px;
+    color:#d4af37;
+    font-style:italic;
+}
+
+.footer{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    background:#d4af37;
+    color:#111;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.small{
+    color:#888;
+    font-size:14px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>ESAU YANG TERSINGKIR</h1>
+
+<p>
+Bagaimana jika kita mendengar kisah ini dari sisi yang berbeda?
+</p>
+
+</section>
+
+<div class="progress-wrap">
+
+<div class="progress-label">
+Penjelajahan 80%
+</div>
+
+<div class="progress">
+<div class="bar" style="width:80%;"></div>
+</div>
+
+</div>
+
+<div class="container">
+
+<p>
+Kita mengenal Yakub.
+</p>
+
+<p>
+Kita mengenal Israel.
+</p>
+
+<p>
+Kita mengenal dua belas suku.
+</p>
+
+<p>
+Tetapi bagaimana dengan Esau?
+</p>
+
+<div class="quote">
+Bagaimana jika sejarah selalu terdengar dari suara pihak yang menang?
+</div>
+
+<p>
+DOMUS ISAACI tidak mengajak kita memilih pihak.
+</p>
+
+<p>
+Ia mengajak kita memasuki sebuah rumah yang mulai retak.
+</p>
+
+<p>
+Dan mendengarkan suara yang jarang didengar.
+</p>
+
+<div class="choice">
+
+<button onclick="showEsau()">
+Dengar Suara Esau
+</button>
+
+<button onclick="showJacob()">
+Dengar Suara Yakub
+</button>
+
+</div>
+
+<div id="story" class="story"></div>
+
+<div class="question-box">
+
+<h3>
+Apa yang sebenarnya hilang?
+</h3>
+
+<button class="option" onclick="showAnswer()">
+Berkat
+</button>
+
+<button class="option" onclick="showAnswer()">
+Warisan
+</button>
+
+<button class="option" onclick="showAnswer()">
+Hubungan
+</button>
+
+<div id="answer" class="answer">
+
+<p>
+DOMUS ISAACI mengusulkan sebuah kemungkinan.
+</p>
+
+<p>
+Yang paling berharga mungkin bukan berkat yang hilang.
+</p>
+
+<p>
+Bukan pula warisan yang berpindah tangan.
+</p>
+
+<p>
+Melainkan sebuah rumah yang retak.
+</p>
+
+<p>
+Karena berkat dapat diwariskan.
+</p>
+
+<p>
+Tetapi ketika hubungan hancur, seluruh rumah ikut terluka.
+</p>
+
+</div>
+
+</div>
+
+<div class="quote">
+
+Abraham membangun.
+
+<br><br>
+
+Ishak memelihara.
+
+<br><br>
+
+Namun rumah yang sama kini terbelah menjadi dua jalan.
+
+</div>
+
+<p>
+Mungkin kisah Esau dan Yakub bukan pertama-tama tentang siapa yang benar.
+</p>
+
+<p>
+Melainkan tentang betapa rapuhnya sebuah rumah ketika kasih mulai digantikan oleh persaingan.
+</p>
+
+<p>
+Dan betapa mahalnya harga yang harus dibayar ketika anggota keluarga berhenti melihat satu sama lain sebagai saudara.
+</p>
+
+</div>
+
+<div class="footer">
+
+<a href="rumah-sebelum-taurat.html" class="btn">
+Lanjut ke Rumah Sebelum Taurat →
+</a>
+
+<div class="small">
+DOMUS ISAACI • Ruang 4
+</div>
+
+</div>
+
+<script>
+
+function showEsau(){
+
+document.getElementById("story").style.display="block";
+
+document.getElementById("story").innerHTML=`
+
+<h2>Suara Esau</h2>
+
+<p>
+Aku lahir lebih dahulu.
+</p>
+
+<p>
+Aku berjalan di padang.
+</p>
+
+<p>
+Aku berburu untuk keluargaku.
+</p>
+
+<p>
+Aku mencintai ayahku.
+</p>
+
+<p>
+Namun suatu hari aku pulang dalam keadaan lapar.
+</p>
+
+<p>
+Dan hidupku tidak pernah sama lagi.
+</p>
+
+<p>
+Orang-orang mengingatku sebagai orang yang menjual hak kesulungan.
+</p>
+
+<p>
+Tetapi sedikit yang bertanya bagaimana rasanya kehilangan sesuatu yang sejak lahir dianggap milikku.
+</p>
+
+<p>
+Apakah aku bersalah?
+</p>
+
+<p>
+Mungkin.
+</p>
+
+<p>
+Tetapi apakah hanya aku yang bersalah?
+</p>
+
+`;
+
+}
+
+function showJacob(){
+
+document.getElementById("story").style.display="block";
+
+document.getElementById("story").innerHTML=`
+
+<h2>Suara Yakub</h2>
+
+<p>
+Aku menginginkan sesuatu yang lebih besar dari sekadar makanan.
+</p>
+
+<p>
+Aku mengejar janji.
+</p>
+
+<p>
+Aku mengejar masa depan.
+</p>
+
+<p>
+Aku mengejar berkat.
+</p>
+
+<p>
+Tetapi jalan yang kupilih ternyata membawa luka yang panjang.
+</p>
+
+<p>
+Aku memperoleh apa yang kuinginkan.
+</p>
+
+<p>
+Namun aku harus melarikan diri dari rumahku sendiri.
+</p>
+
+<p>
+Aku mendapatkan berkat.
+</p>
+
+<p>
+Tetapi kehilangan kedamaian.
+</p>
+
+<p>
+Aku mendapatkan masa depan.
+</p>
+
+<p>
+Tetapi kehilangan seorang saudara.
+</p>
+
+`;
+
+}
+
+function showAnswer(){
+
+document.getElementById("answer").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
